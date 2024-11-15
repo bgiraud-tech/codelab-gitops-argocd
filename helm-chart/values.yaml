@@ -1,6 +1,6 @@
 # Backend configuration
 backend:
-  name: backendbgi
+  name: kubectl delete deploy/backendbgi -n kcl-bgiraud-wk
   image: docker.io/rkaeffer/codelab-gitops-backend:1.0.0
   containerPort: 8080
   host: 	bgiraud-backend.codelab.cloud-sp.eu
@@ -8,10 +8,10 @@ backend:
     port: 443
 
 # Frontend configuration
-frontend:
-  name: frontendbgi
-  image: docker.io/rkaeffer/codelab-gitops-frontend:1.0.0
-  containerPort: 4200
-  host: 	bgiraud-frontend.codelab.cloud-sp.eu
-  service:
-    port: 443
+# frontend:
+#   name: frontendbgi
+#   image: docker.io/rkaeffer/codelab-gitops-frontend:1.0.0
+#   containerPort: 4200
+#   host: 	bgiraud-frontend.codelab.cloud-sp.eu
+#   service:
+#     port: 443
