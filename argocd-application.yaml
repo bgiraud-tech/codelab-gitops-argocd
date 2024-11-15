@@ -13,7 +13,7 @@ spec:
     path: helm-chart 
     targetRevision: main
     helm:
-      releaseName: helm_release1
+      releaseName: helm-release1
   # Destination cluster and namespace to deploy the application
   destination:
     name: in-cluster
